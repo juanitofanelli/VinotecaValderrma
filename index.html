@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinoteca Valderrama</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="BV.jpeg" alt="Imagen de bienvenida" width="400">
+    
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#bodegas">Bodegas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Bienvenido a Vinoteca Valderrama</h2>
+            <p>Descubre una selección cuidadosamente elegida de vinos de todo el mundo, delicatessen, regalería y mucho más.</p>
+            <button><a href="#bodegas">Conoce la gran selección de bodegas con las que trabajamos</a></button>
+        </div>
+    </section>
+
+    <section id="bodegas" class="bodegas hidden">
+        <div class="container">
+            <h2>Nuestras Bodegas</h2>
+            <p>Aquí puedes encontrar un listado de las bodegas boutique:</p>
+            <ul>
+                <!-- Aquí puedes agregar imágenes si deseas -->
+                <li>La Rural (Rutini)</li>
+                <li>Catena Zapata</li>
+                <li>La Rural(Rutini)</li>
+                <li>Catena Zapata</li>
+                <li>Salentein</li>
+                <li>Siete fincas</li>
+                <li>Nieto Senetiner</li>
+                <li>Norton</li>
+                <li>Gouguenhein</li>
+                <li>Las Perdices</li>
+                <li>Chandon</li>
+                <li>Mosquita Muerta</li>
+                <li>Santa Julia</li>
+                <li>Rutini</li>
+                <li>Escorihuela Gascón</li>
+                <li>Trapiche</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto hidden">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Bv rondeau 1714, Rosario.</p>
+            <p>Horarios: Lunes a Sábados: 9:30 a 13:00 y 16:30 a 20:30 Domingos de 10:00 a 13:00</p>
+            <p>Email: vinotecavalderrama@hotmail.com</p>
+            <p>Teléfono: 455-0755</p>
+            <div class="social-links">
+                <p>¡Síguenos en Instagram para obtener las últimas novedades y ofertas especiales!</p>
+                <a href="https://www.instagram.com/vinotecavalderrama?igsh=MWU0dGlhZ2xocDkzNQ==" target="_blank">@vinotecavalderrama</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vinoteca Vinoteca Valderrama. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para mostrar u ocultar las secciones al hacer clic en los enlaces de navegación
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                const sections = document.querySelectorAll('section');
+                sections.forEach(section => section.classList.add('hidden'));
+                targetSection.classList.remove('hidden');
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
