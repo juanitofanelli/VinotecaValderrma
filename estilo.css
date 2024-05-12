@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+    .container {
+        width: 80%;
+        margin: 10px auto 0 auto; /* Ajustamos el margin superior a 50px */
+        padding: 20px 0;
+    }
+
+header {
+    background-color: #691427; /* Color bordó tirando a color uva */
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+    .hero {
+        background-color: #691427; /* Color bordó tirando a color uva */
+        color: #ffffff;
+        padding: 50px 0 100px 0; /* Ajustamos el padding superior a 50px y el inferior a 100px */
+        text-align: center;
+    }
+
+.hero button {
+    background-color: #333;
+    color: #ffffff; /* Color bordó tirando a color uva */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.hero button,
+.hero button a {
+    color: #ffffff; /* Cambia el color del texto de los botones */
+}
+
+.bodegas {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.contacto {
+    background-color: #691427; /* Color bordó tirando a color uva */
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #691427; /* Color bordó tirando a color uva */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #f0ecec;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #1b0660; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos de la imagen */
+.container img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background-color: #555;
+}
+
